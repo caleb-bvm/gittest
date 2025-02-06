@@ -1,0 +1,77 @@
+/* Light Theme (Default) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode h1 {
+    color: #4dabf7;
+}
+
+body.dark-mode p {
+    color: #b0b0b0;
+}
+
+body.dark-mode button {
+    background-color: #4dabf7;
+}
+
+body.dark-mode button:hover {
+    background-color: #3b8fd9;
+}
