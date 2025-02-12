@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Toggle</title>
+    <title>2-Player Breakout Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 id="toggleh1">Hacia la oscuridad!</h1>
-        <p>Esto es un simple ejemplo de cambios de color en una pagina</p>
-        <button id="toggleButton">Cambiar a modo oscuro</button>
+    <div class="game-container">
+        <div class="paddle" id="paddle1"></div>
+        <div class="paddle" id="paddle2"></div>
+        <div class="ball" id="ball"></div>
+        <div class="score">
+            <span>Player 1: <span id="score1">0</span></span>
+            <span>Player 2: <span id="score2">0</span></span>
+        </div>
+        <div class="lives">
+            <span>Player 1 Lives: <span id="lives1">3</span></span>
+            <span>Player 2 Lives: <span id="lives2">3</span></span>
+        </div>
+        <div id="gameOver" class="hidden">
+            <h1>Game Over!</h1>
+            <p id="winnerMessage"></p>
+            <button id="restartButton">Restart Game</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+</html>
