@@ -59,6 +59,7 @@ function updateBall() {
         lives2.textContent = player2Lives;
         checkGameOver();
     }
+    
 
     ball.style.left = `${ballX}px`;
     ball.style.top = `${ballY}px`;
